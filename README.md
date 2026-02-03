@@ -52,3 +52,29 @@ Want to try this on your own phone? You only need [Termux](https://termux.dev).
 pkg install proot-distro python git
 proot-distro install ubuntu
 proot-distro login ubuntu
+```
+
+**2. Clone the Repo**
+
+```bash
+git clone [https://github.com/](https://github.com/)[YourUsername]/edge-ai-ids.git
+cd edge-ai-ids
+```
+
+**3. Run the Benchmark**
+```bash
+# Install dependencies
+pip install river torch pandas matplotlib
+
+# Run the Green AI Model
+python edge_cybersecurity.py
+```
+
+## Theory: Why "Online Learning"?
+Traditional AI requires retraining the whole model when data changes. Online Learning updates the model with every single packet. This makes it perfect for:
+
+
+- Drift Adaptation: Detects new attack types instantly.
+
+- Low Memory: Only stores the current state, not the history.
+
